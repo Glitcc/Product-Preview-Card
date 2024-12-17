@@ -30,3 +30,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* css for the Fraunces font */
+.headers h1, .price strong {
+    font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+}
