@@ -25,4 +25,8 @@
 
 body {
     background-color: var(--cream);
+    font-family: 'Monsterrat', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
