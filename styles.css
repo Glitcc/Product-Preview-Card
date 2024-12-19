@@ -9,9 +9,6 @@
 
 :root {
 
-    /* Default font size for paragraphs */
-    font-size: 14px;
-
     /* Primary Colors */
     --darkCyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
@@ -25,13 +22,39 @@
 
 body {
     background-color: var(--cream);
-    font-family: 'Monsterrat', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+h6, p, .price s {
+    font-weight: 500;
+    font-size: 14px;
+}
+
 /* css for the Fraunces font */
 .headers h1, .price strong {
+    font-size: 2rem;
     font-family: 'Fraunces', Arial, Helvetica, sans-serif;
 }
+
+strong {
+    color: var(--darkCyan);
+}
+
+button, .button {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    font-weight: 700;
+    background-color: var(--darkCyan);
+    color: var(--white);
+}
+
+.price {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
