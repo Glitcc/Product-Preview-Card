@@ -22,39 +22,54 @@
 
 body {
     background-color: var(--cream);
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-}
-
-h6, p, .price s {
-    font-weight: 500;
     font-size: 14px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: var(--darkGrayishBlue);
+    font-weight: 500;
 }
 
-/* css for the Fraunces font */
-.headers h1, .price strong {
-    font-size: 2rem;
-    font-family: 'Fraunces', Arial, Helvetica, sans-serif;
-}
-
-strong {
-    color: var(--darkCyan);
-}
-
-button, .button {
+.card {
+    background-color: var(--white);
     display: flex;
     justify-content: center;
-    gap: 14px;
-    font-weight: 700;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+
+.image {   
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+}
+
+button {
+    border: none;
     background-color: var(--darkCyan);
     color: var(--white);
 }
 
-.price {
-    gap: 1rem;
-    display: flex;
-    align-items: center;
+h6 {
+    font-size: 14px;
+    font-weight: 500;
 }
-
