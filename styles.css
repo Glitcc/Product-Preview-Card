@@ -9,6 +9,8 @@
 
 :root {
 
+    font-size: 14px;
+
     /* Primary Colors */
     --darkCyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
@@ -21,98 +23,93 @@
 }
 
 body {
-    background-color: var(--cream);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: var(--darkGrayishBlue);
-    font-weight: 500;
+    height: 100vh;
+    background-color: var(--cream);
+    font-family: Arial, sans-serif;
 }
 
 .card {
-    background-color: var(--white);
     display: flex;
-    justify-content: center;
-    width: 38rem;
-    height: 28rem;
-    min-width: 38rem;
-    min-width: 28rem;
-    border-radius: 0.5rem;
-}
-
-
-.image {   
-    width: 50%;
-    height: 100%;
+    background: var(--white);
+    border-radius: 10px;
     overflow: hidden;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.image img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-}
-
-.content {
+.card img {
     width: 50%;
-    height: 100%;
-    padding: 36px;
-}
-
-.button, button {
-    border: none;
-    background-color: var(--darkCyan);
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     object-fit: cover;
 }
 
-.button-text {
-    color: var(--white);
-    margin-left: 8px;
-    font-weight: 700;
+.card-content {
+    padding: 2.5rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-}
-
-h6 {
-    font-size: 14px;
     font-weight: 500;
-    letter-spacing: 4px;
+    color: var(--darkGrayishBlue);
 }
 
-h1 {
-    color: var(--veryDarkBlue);
+.card-content small {
+    letter-spacing: 0.3rem;
+}
+
+h3 {
     padding-top: 1.5rem;
-    line-height: 1.1;
-    padding-bottom: 1.5rem;
-}
-
-.fraunces-font {
     font-family: 'Fraunces', Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 2rem;
-}
-
-p {
-    line-height: 1.6;
+    color: var(--veryDarkBlue);
+    font-size: xx-large;
+    line-height: 1;
 }
 
 .price {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--darkCyan);
+    font-size: xx-large;
 }
 
-strong {
-    color: var(--darkCyan);
+.prices {
+    padding-top: 1.7rem;
+    padding-bottom: 1.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.old-price {
+    padding-left: 1rem;
+    text-decoration: line-through;
+}
+
+.card-content p {
+    padding-top: 1.5rem;
+    line-height: 1.6;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkCyan);
+    color: var(--white);
+    height: 3.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.button img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.button span {
+    padding-left: 1rem;
+}
+
+.button:hover {
+    background-color: hsl(158, 36%, 20%);
 }
